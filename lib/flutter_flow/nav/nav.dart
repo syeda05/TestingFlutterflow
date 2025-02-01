@@ -48,6 +48,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Login',
           path: '/login',
           builder: (context, params) => const LoginWidget(),
+        ),
+        FFRoute(
+          name: 'OTP',
+          path: '/otp',
+          builder: (context, params) => const OtpWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
