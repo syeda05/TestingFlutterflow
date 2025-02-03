@@ -153,7 +153,16 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           padding: EdgeInsets.zero,
                           shrinkWrap: true,
                           scrollDirection: Axis.vertical,
-                          children: const [],
+                          children: [
+                            Container(
+                              width: 100.0,
+                              height: 100.0,
+                              decoration: BoxDecoration(
+                                color: FlutterFlowTheme.of(context)
+                                    .secondaryBackground,
+                              ),
+                            ),
+                          ],
                         ),
                       ],
                     ),
